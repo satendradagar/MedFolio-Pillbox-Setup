@@ -95,7 +95,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "871"
             endingLineNumber = "871"
-            landmarkName = "-readMessage"
+            landmarkName = "-sendReadCommand"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

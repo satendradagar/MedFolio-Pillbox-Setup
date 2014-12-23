@@ -8,14 +8,20 @@
 
 #import "MPDeviceConfigurationViewController.h"
 #import "MPDeviceCommand.h"
+#import "MPScanSSIDController.h"
+#import "MPConnectivityController.h"
 
 @interface MPDeviceConfigurationViewController ()
 {
     NSArray *deviceCommands;
     NSUInteger executingCommandIndex;
     BOOL isAutoPilotMode;
+    MPScanSSIDController *scanSsidController;
+    MPConnectivityController *connectivityController;
+    NSMutableString *completeCommandOutput;
 }
 
+@property (nonatomic, weak) IBOutlet NSView *mainContentView;
 @property (weak) IBOutlet NSTextField *connectivityMessage;
 @property (weak) IBOutlet NSTextField *pipeReadWriteError;
 @property (weak) IBOutlet NSTextField *pipeReadWriteMessage;
@@ -30,6 +36,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    
+    
     MPDeviceCommunication *deviceComm = [MPDeviceCommunication sharedInstance];
 
 //    deviceComm.deviceProductId = 11894;
@@ -56,9 +64,12 @@
     MPDeviceCommand *setWlanPass = [[MPDeviceCommand alloc] initWithCommand:@"set wlan pass olbapnas\r" andExpectedOutput:@"AOK"];
     MPDeviceCommand *storeData = [[MPDeviceCommand alloc] initWithCommand:@"save\r" andExpectedOutput:@"Storing in config"];
     MPDeviceCommand *rebootDevice = [[MPDeviceCommand alloc] initWithCommand:@"reboot\r" andExpectedOutput:@"GW="];
+    MPDeviceCommand *scanDevice = [[MPDeviceCommand alloc] initWithCommand:@"scan\r" andExpectedOutput:@"END"];
 
-    deviceCommands = @[commandCMDMode,setWlanSSID,setWlanPass,storeData,rebootDevice];
+    deviceCommands = @[commandCMDMode,setWlanSSID,setWlanPass,storeData,rebootDevice,scanDevice];
 
+    [[MPDeviceCommunication sharedInstance] setupDevice];//Create a interface with device
+    [self showScanSSIDView];
     // Do view setup here.
 }
 
@@ -167,6 +178,23 @@
 
                 break;
             }
+            case 5:
+            {
+                [completeCommandOutput appendString:message];
+                MPDeviceCommand *deviceCommand = deviceCommands[executingCommandIndex];
+                if ([message rangeOfString:deviceCommand.expectedOutput options:NSCaseInsensitiveSearch].location != NSNotFound) {//present, Send next command
+                    executingCommandIndex = 0;
+                    isAutoPilotMode = NO;
+                    [NSApp presentError:[NSError errorWithDomain:@"Data Saved successfully" code:0 userInfo:nil]];
+                    
+                    //                    executingCommandIndex++;
+                    //                    MPDeviceCommand *deviceCommand = deviceCommands[executingCommandIndex];
+                    //                    [[MPDeviceCommunication sharedInstance] writeCommandMessage:deviceCommand.sendCommand];
+                }
+                
+                break;
+            }
+                
             default:
                 break;
         }
@@ -202,10 +230,43 @@
 
 - (IBAction)startAutoPilotMode:(id)sender {
     isAutoPilotMode = YES;
+    executingCommandIndex = 0;
     MPDeviceCommand *deviceCommand = deviceCommands[executingCommandIndex];
     
     [[MPDeviceCommunication sharedInstance] writeCommandMessage:deviceCommand.sendCommand];
     [[MPDeviceCommunication sharedInstance] readMessageOnSecondaryThread];
 
 }
+
+#pragma mark - show view methods
+- (void)showScanSSIDView
+{
+    scanSsidController = [[MPScanSSIDController alloc] initWithNibName:@"MPScanSSIDController" bundle:nil];
+    [self.view replaceSubview:self.mainContentView with:scanSsidController.view];
+    self.mainContentView = scanSsidController.view;
+    executingCommandIndex = 5;
+
+    completeCommandOutput = [NSMutableString new];
+}
+
+- (void)showConnectivityView
+{
+    
+}
+
+-(void)showEnterPasswordView
+{
+    
+}
+
+-(void)showSaveDetailsView
+{
+    
+}
+
+-(void)showRebootingView
+{
+    
+}
+
 @end

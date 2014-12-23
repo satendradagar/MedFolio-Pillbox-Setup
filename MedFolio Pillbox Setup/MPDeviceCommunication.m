@@ -176,9 +176,7 @@ IOReturn FindInterfaces(IOUSBDeviceInterface **device)
         }
         
         //Now create the device interface for the interface
-        result = (*plugInInterface)->QueryInterface(plugInInterface,
-                                                    CFUUIDGetUUIDBytes(kIOUSBInterfaceInterfaceID),
-                                                    (LPVOID *) &interface);
+        result = (*plugInInterface)->QueryInterface(plugInInterface,CFUUIDGetUUIDBytes(kIOUSBInterfaceInterfaceID),(LPVOID *) &interface);
         //No longer need the intermediate plug-in
         (*plugInInterface)->Release(plugInInterface);
         
@@ -191,15 +189,13 @@ IOReturn FindInterfaces(IOUSBDeviceInterface **device)
         }
         
         //Get interface class and subclass
-        kr = (*interface)->GetInterfaceClass(interface,
-                                             &interfaceClass);
-        kr = (*interface)->GetInterfaceSubClass(interface,
-                                                &interfaceSubClass);
+        kr = (*interface)->GetInterfaceClass(interface,&interfaceClass);
+        
+        kr = (*interface)->GetInterfaceSubClass(interface,&interfaceSubClass);
         
         printf("Interface class %d, subclass %d\n", interfaceClass,
                interfaceSubClass);
-        [DeviceCommunicaton deviceDidReceiveDebugMessage:[NSString stringWithFormat:@"Interface class %d, subclass %d\n", interfaceClass,
-                                                          interfaceSubClass]];
+        [DeviceCommunicaton deviceDidReceiveDebugMessage:[NSString stringWithFormat:@"Interface class %d, subclass %d\n", interfaceClass,interfaceSubClass]];
         //Now open the interface. This will cause the pipes associated with
         //the endpoints in the interface descriptor to be instantiated
         kr = (*interface)->USBInterfaceOpen(interface);
@@ -774,7 +770,7 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
         }
 
 //        printf("Wrote \"%s\" (%d bytes) to bulk endpoint\n", cCommand,(UInt32) strlen(cCommand));
-        [DeviceCommunicaton deviceCommunicationDidWriteMessage:[NSString stringWithFormat:@"Wrote \"%s\" (%d bytes) to bulk endpoint\n", cCommand,(UInt32) strlen(cCommand)]];
+        [DeviceCommunicaton deviceDidReceiveDebugMessage:[NSString stringWithFormat:@"Wrote \"%s\" (%d bytes) to bulk endpoint\n", cCommand,(UInt32) strlen(cCommand)]];
     
 }
 
@@ -811,7 +807,7 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
     printf("\nPrinting ASCII for write pipe:");
     for (int i = 0; i < count; i++) {
         printf("0x%02x,",asciiArray[i]);
-    }  
+    }
     NSMutableString *inputString = [[NSMutableString alloc] init];
     printf("\nWriting data to device: ");
     for (int i = 0; i < count; i++) {
@@ -831,6 +827,7 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
     //kr = (*interface)->WritePipe(interface, writePipe, (void *)writableData.bytes, (UInt32)writableData.length );
     
     kr = (*interface)->WritePipe(interface, writePipe, asciiArray, count);//(UInt32)strlen(cCommand) - 1);
+    free(asciiArray);
     if (kr != kIOReturnSuccess)
     {
         printf("Unable to perform bulk write (%08x)\n", kr);
@@ -870,7 +867,7 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
     }
     
     
-//    printf("Wrote \"%s\" (%d bytes) to bulk endpoint\n", cCommand,(UInt32) strlen(cCommand));
+//    printf("Wrote \"%s\" (%d bytes) to bulk endpoint\n", cCommand,(UInt32) strlen(cCommandsa));
 //    [DeviceCommunicaton deviceCommunicationDidWriteMessage:[NSString stringWithFormat:@"Wrote \"%s\" (%d bytes) to bulk endpoint\n",  cCommand,(UInt32) strlen(cCommand)]];
 }
 

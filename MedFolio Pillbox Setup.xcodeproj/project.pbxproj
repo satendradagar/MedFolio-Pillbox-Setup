@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD62334C1A43F2FC00335558 /* MPDeviceCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DD62334B1A43F2FC00335558 /* MPDeviceCommand.m */; };
+		DD51E0021A459823001C76D7 /* MPScanSSIDController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51E0001A459823001C76D7 /* MPScanSSIDController.m */; };
+		DD51E0031A459823001C76D7 /* MPScanSSIDController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51E0011A459823001C76D7 /* MPScanSSIDController.xib */; };
+		DD51E0081A459ECF001C76D7 /* MPConnectivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51E0061A459ECF001C76D7 /* MPConnectivityController.m */; };
+		DD51E0091A459ECF001C76D7 /* MPConnectivityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51E0071A459ECF001C76D7 /* MPConnectivityController.xib */; };
 		DD9622891A2B448B009ABF32 /* MPDeviceConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9622881A2B448B009ABF32 /* MPDeviceConfigurationViewController.m */; };
+		DDB8D08D1A46920100AFB1F9 /* MPEnterWifiPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB8D08B1A46920100AFB1F9 /* MPEnterWifiPassword.m */; };
+		DDB8D08E1A46920100AFB1F9 /* MPEnterWifiPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB8D08C1A46920100AFB1F9 /* MPEnterWifiPassword.xib */; };
 		DDD1C0441A28CCCB00666524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1C0431A28CCCB00666524 /* AppDelegate.m */; };
 		DDD1C0461A28CCCB00666524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1C0451A28CCCB00666524 /* main.m */; };
 		DDD1C0481A28CCCB00666524 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD1C0471A28CCCB00666524 /* Images.xcassets */; };
 		DDD1C04B1A28CCCB00666524 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDD1C0491A28CCCB00666524 /* MainMenu.xib */; };
 		DDD1C0571A28CCCB00666524 /* MedFolio_Pillbox_SetupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1C0561A28CCCB00666524 /* MedFolio_Pillbox_SetupTests.m */; };
 		DDD1C0621A28CF9A00666524 /* MPDeviceCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1C0611A28CF9A00666524 /* MPDeviceCommunication.m */; };
+		DDE16AFD1A496CD300DE297A /* MPDeviceCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE16AFC1A496CD300DE297A /* MPDeviceCommand.m */; };
+		DDE16B001A496D2000DE297A /* MPNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE16AFF1A496D2000DE297A /* MPNetwork.m */; };
+		DDE16B041A496F2A00DE297A /* MPScanResultParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE16B031A496F2A00DE297A /* MPScanResultParser.m */; };
+		DDE16B061A49794200DE297A /* MPScanResultParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE16B051A49794200DE297A /* MPScanResultParserTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +37,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DD62334A1A43F2FC00335558 /* MPDeviceCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDeviceCommand.h; sourceTree = "<group>"; };
-		DD62334B1A43F2FC00335558 /* MPDeviceCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDeviceCommand.m; sourceTree = "<group>"; };
+		DD51DFFF1A459823001C76D7 /* MPScanSSIDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPScanSSIDController.h; sourceTree = "<group>"; };
+		DD51E0001A459823001C76D7 /* MPScanSSIDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPScanSSIDController.m; sourceTree = "<group>"; };
+		DD51E0011A459823001C76D7 /* MPScanSSIDController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPScanSSIDController.xib; sourceTree = "<group>"; };
+		DD51E0051A459ECF001C76D7 /* MPConnectivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPConnectivityController.h; sourceTree = "<group>"; };
+		DD51E0061A459ECF001C76D7 /* MPConnectivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPConnectivityController.m; sourceTree = "<group>"; };
+		DD51E0071A459ECF001C76D7 /* MPConnectivityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPConnectivityController.xib; sourceTree = "<group>"; };
 		DD9622871A2B448B009ABF32 /* MPDeviceConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDeviceConfigurationViewController.h; sourceTree = "<group>"; };
 		DD9622881A2B448B009ABF32 /* MPDeviceConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDeviceConfigurationViewController.m; sourceTree = "<group>"; };
+		DDB8D08A1A46920100AFB1F9 /* MPEnterWifiPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEnterWifiPassword.h; sourceTree = "<group>"; };
+		DDB8D08B1A46920100AFB1F9 /* MPEnterWifiPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEnterWifiPassword.m; sourceTree = "<group>"; };
+		DDB8D08C1A46920100AFB1F9 /* MPEnterWifiPassword.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPEnterWifiPassword.xib; sourceTree = "<group>"; };
 		DDD1C03D1A28CCCB00666524 /* MedFolio Pillbox Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MedFolio Pillbox Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD1C0411A28CCCB00666524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDD1C0421A28CCCB00666524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +60,13 @@
 		DDD1C0561A28CCCB00666524 /* MedFolio_Pillbox_SetupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedFolio_Pillbox_SetupTests.m; sourceTree = "<group>"; };
 		DDD1C0601A28CF9A00666524 /* MPDeviceCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDeviceCommunication.h; sourceTree = "<group>"; };
 		DDD1C0611A28CF9A00666524 /* MPDeviceCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDeviceCommunication.m; sourceTree = "<group>"; };
+		DDE16AFB1A496CD300DE297A /* MPDeviceCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDeviceCommand.h; sourceTree = "<group>"; };
+		DDE16AFC1A496CD300DE297A /* MPDeviceCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDeviceCommand.m; sourceTree = "<group>"; };
+		DDE16AFE1A496D2000DE297A /* MPNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNetwork.h; sourceTree = "<group>"; };
+		DDE16AFF1A496D2000DE297A /* MPNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNetwork.m; sourceTree = "<group>"; };
+		DDE16B021A496F2A00DE297A /* MPScanResultParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPScanResultParser.h; sourceTree = "<group>"; };
+		DDE16B031A496F2A00DE297A /* MPScanResultParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPScanResultParser.m; sourceTree = "<group>"; };
+		DDE16B051A49794200DE297A /* MPScanResultParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPScanResultParserTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +87,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD51DFFE1A459804001C76D7 /* ScanDeviceSSID Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DD51DFFF1A459823001C76D7 /* MPScanSSIDController.h */,
+				DD51E0001A459823001C76D7 /* MPScanSSIDController.m */,
+				DD51E0011A459823001C76D7 /* MPScanSSIDController.xib */,
+			);
+			path = "ScanDeviceSSID Controller";
+			sourceTree = "<group>";
+		};
+		DD51E0041A459EAD001C76D7 /* MFDeviceConnectivityController */ = {
+			isa = PBXGroup;
+			children = (
+				DD51E0051A459ECF001C76D7 /* MPConnectivityController.h */,
+				DD51E0061A459ECF001C76D7 /* MPConnectivityController.m */,
+				DD51E0071A459ECF001C76D7 /* MPConnectivityController.xib */,
+			);
+			path = MFDeviceConnectivityController;
+			sourceTree = "<group>";
+		};
+		DDB8D0891A468ECC00AFB1F9 /* EnterWirelessPassword */ = {
+			isa = PBXGroup;
+			children = (
+				DDB8D08A1A46920100AFB1F9 /* MPEnterWifiPassword.h */,
+				DDB8D08B1A46920100AFB1F9 /* MPEnterWifiPassword.m */,
+				DDB8D08C1A46920100AFB1F9 /* MPEnterWifiPassword.xib */,
+			);
+			path = EnterWirelessPassword;
+			sourceTree = "<group>";
+		};
 		DDD1C0341A28CCCB00666524 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +147,11 @@
 				DDD1C0611A28CF9A00666524 /* MPDeviceCommunication.m */,
 				DD9622871A2B448B009ABF32 /* MPDeviceConfigurationViewController.h */,
 				DD9622881A2B448B009ABF32 /* MPDeviceConfigurationViewController.m */,
-				DD62334A1A43F2FC00335558 /* MPDeviceCommand.h */,
-				DD62334B1A43F2FC00335558 /* MPDeviceCommand.m */,
+				DDE16B011A496F0F00DE297A /* Parsers */,
+				DDE16AFA1A496CB400DE297A /* ModelObjects */,
+				DDB8D0891A468ECC00AFB1F9 /* EnterWirelessPassword */,
+				DD51E0041A459EAD001C76D7 /* MFDeviceConnectivityController */,
+				DD51DFFE1A459804001C76D7 /* ScanDeviceSSID Controller */,
 			);
 			path = "MedFolio Pillbox Setup";
 			sourceTree = "<group>";
@@ -114,6 +170,7 @@
 			children = (
 				DDD1C0561A28CCCB00666524 /* MedFolio_Pillbox_SetupTests.m */,
 				DDD1C0541A28CCCB00666524 /* Supporting Files */,
+				DDE16B051A49794200DE297A /* MPScanResultParserTests.m */,
 			);
 			path = "MedFolio Pillbox SetupTests";
 			sourceTree = "<group>";
@@ -124,6 +181,26 @@
 				DDD1C0551A28CCCB00666524 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDE16AFA1A496CB400DE297A /* ModelObjects */ = {
+			isa = PBXGroup;
+			children = (
+				DDE16AFB1A496CD300DE297A /* MPDeviceCommand.h */,
+				DDE16AFC1A496CD300DE297A /* MPDeviceCommand.m */,
+				DDE16AFE1A496D2000DE297A /* MPNetwork.h */,
+				DDE16AFF1A496D2000DE297A /* MPNetwork.m */,
+			);
+			path = ModelObjects;
+			sourceTree = "<group>";
+		};
+		DDE16B011A496F0F00DE297A /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				DDE16B021A496F2A00DE297A /* MPScanResultParser.h */,
+				DDE16B031A496F2A00DE297A /* MPScanResultParser.m */,
+			);
+			path = Parsers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD51E0031A459823001C76D7 /* MPScanSSIDController.xib in Resources */,
+				DD51E0091A459ECF001C76D7 /* MPConnectivityController.xib in Resources */,
 				DDD1C0481A28CCCB00666524 /* Images.xcassets in Resources */,
+				DDB8D08E1A46920100AFB1F9 /* MPEnterWifiPassword.xib in Resources */,
 				DDD1C04B1A28CCCB00666524 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,11 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE16AFD1A496CD300DE297A /* MPDeviceCommand.m in Sources */,
 				DD9622891A2B448B009ABF32 /* MPDeviceConfigurationViewController.m in Sources */,
-				DD62334C1A43F2FC00335558 /* MPDeviceCommand.m in Sources */,
 				DDD1C0621A28CF9A00666524 /* MPDeviceCommunication.m in Sources */,
 				DDD1C0461A28CCCB00666524 /* main.m in Sources */,
+				DDE16B001A496D2000DE297A /* MPNetwork.m in Sources */,
+				DD51E0081A459ECF001C76D7 /* MPConnectivityController.m in Sources */,
+				DDB8D08D1A46920100AFB1F9 /* MPEnterWifiPassword.m in Sources */,
+				DD51E0021A459823001C76D7 /* MPScanSSIDController.m in Sources */,
 				DDD1C0441A28CCCB00666524 /* AppDelegate.m in Sources */,
+				DDE16B041A496F2A00DE297A /* MPScanResultParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDD1C0571A28CCCB00666524 /* MedFolio_Pillbox_SetupTests.m in Sources */,
+				DDE16B061A49794200DE297A /* MPScanResultParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
