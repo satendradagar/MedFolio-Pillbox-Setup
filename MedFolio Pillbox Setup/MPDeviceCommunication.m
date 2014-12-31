@@ -12,6 +12,7 @@
 #import <Foundation/Foundation.h>
 
 #import "MPDeviceCommunication.h"
+#import <time.h>
 
 //#define USE_ASYNC_IO    //Comment this line out if you want to use
 //synchronous calls for reads and writes
@@ -23,6 +24,62 @@ char                     gBuffer[64];
 IOUSBInterfaceInterface     **interface = NULL;
 int readPipe;
 int writePipe;
+BOOL isDeviceConnected;
+
+void printTime(){
+    time_t rawtime;
+    struct tm * timeinfo;
+    
+    time ( &rawtime );
+    timeinfo = localtime ( &rawtime );
+    printf ( "[%s]", asctime (timeinfo) );
+}
+
+void printAsciiAndCharacters(uint8_t *asciiArray, int totalCount, int startPoint)
+{
+    for (int i = startPoint; i < totalCount + startPoint; i++) {
+        printf("0x%02x,",asciiArray[i]);
+    }
+    int counter = totalCount;
+    while (counter++ < 16) {
+        printf("NONE,");
+    }
+//    printf("\n");
+    //    printf("\nWriting data to device: ");
+    for (int i = startPoint; i < totalCount+ startPoint; i++) {
+        if (isprint(asciiArray[i]))
+        {
+            printf("%c ",asciiArray[i]);
+        }
+        else
+        {
+            printf(". ");
+
+        }
+    }
+    
+    counter = totalCount;
+    while (counter++ < 16) {
+        printf(". ");
+    }
+}
+
+void printAsciiArray(char *msg, uint8_t *asciiArray, int totalCount)
+{
+    printf("\n--%s--",msg);
+    printTime();
+    int numberOfLoops = totalCount/16;
+    int currentLoop = 0;
+    while (currentLoop < numberOfLoops) {
+        printAsciiAndCharacters(asciiArray, 16, currentLoop * 16);
+        currentLoop ++;
+        printf("\n");
+    }
+    int remaining = totalCount - currentLoop *16;
+    printAsciiAndCharacters(asciiArray, remaining, currentLoop * 16);
+
+    
+}
 
 @interface MPDeviceCommunication()
 {
@@ -31,7 +88,6 @@ int writePipe;
     io_iterator_t            gRawAddedIter;
     io_iterator_t            gRawRemovedIter;
     BOOL isAlreadyReading;
-
 //    io_iterator_t            gBulkTestAddedIter;
 //    io_iterator_t            gBulkTestRemovedIter;
 }
@@ -589,8 +645,11 @@ void RawDeviceAdded(void *refCon, io_iterator_t iterator)
          }
          */
         //Close this device and release object
+        isDeviceConnected = YES;
+
         kr = FindInterfaces(dev);
         [DeviceCommunicaton deviceDidConnected];
+
         kr = (*dev)->USBDeviceClose(dev);
         kr = (*dev)->Release(dev);
     }
@@ -600,6 +659,10 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
 {
     kern_return_t   kr;
     io_service_t    object;
+    
+//  kr = (*interface)->AbortPipe(interface, readPipe);
+//    kr = (*interface)->AbortPipe(interface, writePipe);
+    isDeviceConnected = NO;
     [DeviceCommunicaton deviceDidDisconnected];
     while (object = IOIteratorNext(iterator))
     {
@@ -725,6 +788,10 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
 
 - (void)writeMessage:(NSString *)message
 {
+    if (NO == isDeviceConnected) {
+        return;
+    }
+
 //#define SSCOM_STR = 0x02; // STX
 //#define SSCOM_CMD_PUT_SERIAL_MSG = 0xAB;
     uint8_t bytes[] = {0x02,0xAB,0x03,0x24,0x24,0x24,0x03};
@@ -741,16 +808,20 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
     kr = (*interface)->ResetPipe(interface,readPipe);
     NSLog(@"kr = %d",kr);
     
-    printf("\nPrinting ASCII for write pipe:");
-    for (int i = 0; i < 7; i++) {
-        printf("0x%02x,",bytes[i]);
-    }
-
-    printf("\nWriting data to device: ");
-    for (int i = 0; i < 7; i++) {
-        if (isprint(bytes[i]))
-            printf("%c ",bytes[i]);
-    }
+//    printf("\n--Writing--\n");
+//    printTime();
+//    for (int i = 0; i < 7; i++) {
+//        printf("0x%02x,",bytes[i]);
+//    }
+//    printf("\n");
+//    //    printf("\nWriting data to device: ");
+//    for (int i = 0; i < 7; i++) {
+//        if (isprint(bytes[i]))
+//        {
+//            printf("%c ",bytes[i]);
+//        }
+//    }
+    printAsciiArray("Writing", bytes, 7);
 
 
     char *cCommand = (char *)[completeCommand cStringUsingEncoding:NSUTF8StringEncoding];
@@ -774,8 +845,23 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
     
 }
 
+- (void) resetPipes
+{
+    NSLog(@"Resetting the pipes");
+    kern_return_t           kr;
+
+        kr = (*interface)-> AbortPipe(interface,writePipe);
+        NSLog(@"kr = %d",kr);
+    
+        kr = (*interface)->AbortPipe(interface,readPipe);
+    
+}
 - (void)writeCommandMessage:(NSString *)message
 {
+    if (NO == isDeviceConnected) {
+        return;
+    }
+    
     //#define SSCOM_STR = 0x02; // STX
     //#define SSCOM_CMD_PUT_SERIAL_MSG = 0xAB;
     uint8_t *asciiArray = (uint8_t *)malloc((message.length + 4)* sizeof(uint8_t));
@@ -790,8 +876,13 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
     asciiArray[count++] = 3;
 
     kern_return_t           kr;
+//    
+//    kr = (*interface)->ClearPipeStall(interface,writePipe);
+//    NSLog(@"kr = %d",kr);
+//    kr = (*interface)->ClearPipeStall(interface,readPipe);
+//    NSLog(@"kr = %d",kr);
     
-    
+
 /*STX,A,B,Len,Payload,ETX*/
 //    kr = (*interface)->ClearPipeStall(interface,writePipe);
 //    NSLog(@"kr = %d",kr);
@@ -803,20 +894,23 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
 //    
 //    kr = (*interface)->ResetPipe(interface,readPipe);
     NSLog(@"kr = %d",kr);
-    
-    printf("\nPrinting ASCII for write pipe:");
-    for (int i = 0; i < count; i++) {
-        printf("0x%02x,",asciiArray[i]);
-    }
+    printAsciiArray("Writing", asciiArray, count);
+//    printf("\n--Writing--");
+//    printTime();
+//
+//    for (int i = 0; i < count; i++) {
+//        printf("0x%02x,",asciiArray[i]);
+//    }
     NSMutableString *inputString = [[NSMutableString alloc] init];
-    printf("\nWriting data to device: ");
-    for (int i = 0; i < count; i++) {
-        if (isprint(asciiArray[i]))
-        {
-            printf("%c ",asciiArray[i]);
-            [inputString appendFormat:@"%c",asciiArray[i]];
-        }
-    }
+//    printf("");
+//    printf("\nWriting data to device: ");
+//    for (int i = 0; i < count; i++) {
+//        if (isprint(asciiArray[i]))
+//        {
+//            printf("%c ",asciiArray[i]);
+//            [inputString appendFormat:@"%c",asciiArray[i]];
+//        }
+//    }
     [DeviceCommunicaton deviceDidReceiveDebugMessage:inputString];
 
     
@@ -844,19 +938,19 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
 }
 - (void)sendReadCommand
 {
+    if (NO == isDeviceConnected) {
+        return;
+    }
+//
     //#define SSCOM_STR = 0x02; // STX
     //#define SSCOM_CMD_PUT_SERIAL_MSG = 0xAB;
 //    #define SSCOM_CMD_GET_SERIAL_MSG = 0xAC
 //    [self writeMessage:@"$$$"];
 //    NSString *completeCommand = [NSString stringWithFormat:@"%c%c%c%c",2,172,0,3];/*STX,A,B,Len,Payload,ETX*/
-    uint8_t bytes2[] = {0x02,0xAC,0x00,0x03};
-//    printf("\nWriting read command to device: ");
-//    for (int i = 0; i < 4; i++) {
-//        if (isprint(bytes2[i]))
-//            printf("%c ",bytes2[i]);
-//    }
+    uint8_t bytes2[4] = {0x02,0xAC,0x00,0x03};
+//    printAsciiArray("Writing", bytes2, 4);
     kern_return_t           kr;
-//    char *cCommand = (char *)[completeCommand cStringUsingEncoding:NSUTF8StringEncoding];
+
     kr = (*interface)->WritePipe(interface, writePipe, bytes2, 4);//UInt32)strlen(cCommand) - 1);
     if (kr != kIOReturnSuccess)
     {
@@ -966,44 +1060,52 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
 
 -(void) readMessageOnSecondaryThread
 {
+#define BUFFER_SIZE 64
     if (isAlreadyReading) {
         return;
     }
+    if (NO == isDeviceConnected) {
+        return;
+    }
+
     isAlreadyReading = YES;
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-      while (1) {
+      while (1 & isDeviceConnected) {
           UInt32                      numBytesRead;
 //          char                     gBuffer2[64];
           kern_return_t           kr;
-          uint8_t               intBuffer[64];
-          for (int i=0; i < 64; i++) {
+          uint8_t               intBuffer[BUFFER_SIZE];
+          for (int i=0; i < BUFFER_SIZE; i++) {
               intBuffer[i] = '\0';
           }//Create empty string
           numBytesRead = sizeof(intBuffer) - 1; //leave one byte at the end
           //for NULL termination
-          printf("Waiting to complete read");
+          printf("\nWaiting to complete read");
           __block BOOL isReadCompleted = NO;
           dispatch_async(dispatch_get_current_queue(), ^{
-              while (NO ==isReadCompleted) {
+              while (NO == isReadCompleted) {
                   [self sendReadCommand];
-//                  printf("Sent read command");
-                  sleep(1.125);
+//                  NSLog(@"Sent read command");
+                  usleep(100000);
               }
 
           });
           
           kr = (*interface)->ReadPipe(interface, readPipe, intBuffer,
-                                      &numBytesRead);
+                                      &numBytesRead);//Unplugging USB cable causes exception here
           isReadCompleted = YES;
-          printf("\nPrinting ASCII:");
-          for (int i = 0; i < numBytesRead; i++) {
-              printf("0x%02x,",intBuffer[i]);
-              //          [hexStr appendFormat:@"%02x ", dbytes[i]];
-          }
+          printAsciiArray("Reading", intBuffer, numBytesRead);
+
+//          printf("\n--Reading--");
+//          printTime();
+//          for (int i = 0; i < numBytesRead; i++) {
+//              printf("0x%02x,",intBuffer[i]);
+//              //          [hexStr appendFormat:@"%02x ", dbytes[i]];
+//          }
           
           //      NSString *outputFromHex = [self NSDataToHex:(uint8_t *)intBuffer];
           NSString *output = [[NSString alloc] initWithBytes:intBuffer length:numBytesRead encoding:NSASCIIStringEncoding];
-          NSLog(@"output = %@",output);
+//          NSLog(@"output = %@",output);
           
           dispatch_async(dispatch_get_main_queue(), ^{
               [DeviceCommunicaton deviceDidReceiveDebugMessage:@"Waiting to complete read"];
@@ -1021,26 +1123,27 @@ void RawDeviceRemoved(void *refCon, io_iterator_t iterator)
           }
           
           NSMutableString *outputString = [[NSMutableString alloc] init];
-          printf("\nWill print characters now\n\n");
-          
+//          printf("\nWill print characters now\n\n");
+//          printf("\n");
           for (int i = 0; i < numBytesRead; i++){
-              if (isprint(intBuffer[i]))
+              if (isprint(intBuffer[i]) || '\n' == intBuffer[i])
               {
-                  printf("%c",intBuffer[i]);
+//                  printf("%c",intBuffer[i]);
                   [outputString appendFormat:@"%c",intBuffer[i]];
               }
           }
-          printf("\n");
-          
-          printf("Will print ascii now\n\n");
-          
-          for (int i = 0; i < numBytesRead; i++){
-              printf("%d ",intBuffer[i]);
-          }
+//          printf("\n");
+//          
+//          printf("Will print ascii now\n\n");
+//          
+//          for (int i = 0; i < numBytesRead; i++){
+//              printf("%d ",intBuffer[i]);
+//          }
           printf("\n");
           dispatch_async(dispatch_get_main_queue(), ^{
             [DeviceCommunicaton deviceCommunicationdidReadMessage:outputString];
             });
+          NSLog(@"isDeviceConnected = %d",isDeviceConnected);
 //          puts(gBuffer2);
 //          printf("Read \"%s\" (%d bytes) from bulk endpoint\n", gBuffer2,numBytesRead);
           //      dispatch_async(dispatch_get_main_queue(), ^{

@@ -38,6 +38,7 @@
 /*
  */
 - (int)setupDevice;
+- (void) resetPipes;
 
 - (void)writeMessage:(NSString *)message;
 - (void)writeCommandMessage:(NSString *)message;
