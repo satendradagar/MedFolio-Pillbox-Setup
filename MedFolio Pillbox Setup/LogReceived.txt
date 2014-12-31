@@ -1,0 +1,1050 @@
+2014-12-31 02:38:09.753 MedFolio Pillbox Setup[33013:303] Invalid color System, labelColor (warning given only once)
+configurations = 1OUT:  Device name:
+Interface class 255, subclass 255
+Interface has 2 endpoints
+PipeRef 1: direction out, transfer type bulk, maxPacketSize 64
+PipeRef 2: direction in, transfer type bulk, maxPacketSize 64
+2014-12-31 02:38:09.841 MedFolio Pillbox Setup[33013:303] Resetting the pipes
+2014-12-31 02:38:09.841 MedFolio Pillbox Setup[33013:303] kr = 0
+2014-12-31 02:38:09.843 MedFolio Pillbox Setup[33013:303] kr = 0
+
+--Writing--[Wed Dec 31 02:38:09 2014
+]0x02,0xab,0x03,0x24,0x24,0x24,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . $ $ $ . . . . . . . . . .
+Waiting to complete read
+--Reading--[Wed Dec 31 02:38:09 2014
+]0x02,0xab,0x03,0x24,0x24,0x24,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . $ $ $ . . . . . . . . . .
+2014-12-31 02:38:09.951 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:10.006 MedFolio Pillbox Setup[33013:303] read message switch 0
+2014-12-31 02:38:10.006 MedFolio Pillbox Setup[33013:303] kr = -24577
+
+--Writing--[Wed Dec 31 02:38:10 2014
+]0x02,0xab,0x01,0x0d,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . . . . . . . . . . . . . .
+--Reading--[Wed Dec 31 02:38:10 2014
+]0x02,0xab,0x16,0x0d,0x0d,0x0a,0x45,0x52,0x52,0x3a,0x20,0x3f,0x2d,0x43,0x6d,0x64,. . . . . . E R R :   ? - C m d
+0x0d,0x0a,0x3c,0x34,0x2e,0x30,0x30,0x3e,0x20,0x03,NONE,NONE,NONE,NONE,NONE,NONE,. . < 4 . 0 0 >   . . . . . . .
+2014-12-31 02:38:10.053 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:10.053 MedFolio Pillbox Setup[33013:303] read message switch 0
+2014-12-31 02:38:10.054 MedFolio Pillbox Setup[33013:303] Received CMD, so going to keep
+2014-12-31 02:38:10.055 MedFolio Pillbox Setup[33013:303] kr = 0
+
+--Writing--[Wed Dec 31 02:38:10 2014
+]0x02,0xab,0x05,0x73,0x63,0x61,0x6e,0x0d,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . s c a n . . . . . . . . .
+--Reading--[Wed Dec 31 02:38:10 2014
+]0x02,0xab,0x0e,0x73,0x63,0x61,0x6e,0x0d,0x0d,0x0a,0x3c,0x34,0x2e,0x30,0x30,0x3e,. . . s c a n . . . < 4 . 0 0 >
+0x20,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,  . . . . . . . . . . . . . . .
+2014-12-31 02:38:10.156 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:10.175 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:10.176 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00> , Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x11,0x0d,0x0a,0x53,0x43,0x41,0x4e,0x3a,0x46,0x6f,0x75,0x6e,0x64,0x20,. . . . . S C A N : F o u n d
+0x34,0x0d,0x0a,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,4 . . 0 . . . . . . . . . . . .
+2014-12-31 02:38:12.683 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.683 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.684 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+0, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x03,0x31,0x2c,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 1 , 0 . . . . . . . . . .
+2014-12-31 02:38:12.685 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.685 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.686 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,0, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x31,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 1 . . . . . . . . . . . .
+2014-12-31 02:38:12.686 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.686 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.687 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , . . . . . . . . . . . .
+2014-12-31 02:38:12.688 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.688 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.688 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2d,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . - . . . . . . . . . . . .
+2014-12-31 02:38:12.689 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.689 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.690 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x36,0x34,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 6 4 . . . . . . . . . . .
+2014-12-31 02:38:12.691 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.691 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.692 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x2c,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , 0 . . . . . . . . . . .
+2014-12-31 02:38:12.693 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.693 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,0, Executing = 1
+2014-12-31 02:38:12.693 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x34,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 4 , . . . . . . . . . . .
+2014-12-31 02:38:12.695 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.695 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.696 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x31,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 1 . . . . . . . . . . . .
+2014-12-31 02:38:12.697 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.697 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.697 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x31,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 1 . . . . . . . . . . . .
+2014-12-31 02:38:12.698 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.698 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.699 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,11, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x30,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 0 . . . . . . . . . . .
+2014-12-31 02:38:12.700 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.700 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.700 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , . . . . . . . . . . . .
+2014-12-31 02:38:12.701 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.701 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.702 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x31,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 1 . . . . . . . . . . . .
+2014-12-31 02:38:12.702 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.702 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.703 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x63,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . c , . . . . . . . . . . .
+2014-12-31 02:38:12.704 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.704 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.705 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x63,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . c . . . . . . . . . . . .
+2014-12-31 02:38:12.706 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.706 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.706 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 . . . . . . . . . . . .
+2014-12-31 02:38:12.707 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.707 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.708 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x2c,0x63,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , c . . . . . . . . . . .
+2014-12-31 02:38:12.709 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.709 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.709 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x38,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 8 . . . . . . . . . . . .
+2014-12-31 02:38:12.710 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.710 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.711 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x3a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . : . . . . . . . . . . . .
+2014-12-31 02:38:12.712 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.712 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.712 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x62,0x33,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . b 3 . . . . . . . . . . .
+2014-12-31 02:38:12.713 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.713 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.714 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x3a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . : . . . . . . . . . . . .
+2014-12-31 02:38:12.715 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.715 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.715 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x37,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 7 . . . . . . . . . . . .
+2014-12-31 02:38:12.716 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.716 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.717 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:7, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x33,0x3a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 3 : . . . . . . . . . . .
+2014-12-31 02:38:12.718 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.718 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.718 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 . . . . . . . . . . . .
+2014-12-31 02:38:12.719 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.719 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.720 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:0, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x36,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 6 . . . . . . . . . . . .
+2014-12-31 02:38:12.721 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.721 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.722 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x3a,0x31,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . : 1 . . . . . . . . . . .
+2014-12-31 02:38:12.723 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.723 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.723 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x61,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . a . . . . . . . . . . . .
+2014-12-31 02:38:12.724 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.724 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.725 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x3a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . : . . . . . . . . . . . .
+2014-12-31 02:38:12.726 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.726 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.726 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x36,0x64,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 6 d . . . . . . . . . . .
+2014-12-31 02:38:12.727 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.727 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.728 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , . . . . . . . . . . . .
+2014-12-31 02:38:12.728 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.729 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.729 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x45,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . E . . . . . . . . . . . .
+2014-12-31 02:38:12.730 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.730 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.731 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x39,0x0d,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 9 . . . . . . . . . . . .
+2014-12-31 02:38:12.732 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.732 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.733 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x0a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . . . . . . . . . . . . . .
+2014-12-31 02:38:12.734 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.734 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.734 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x30,0x32,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 2 . . . . . . . . . . .
+2014-12-31 02:38:12.735 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.735 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.736 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , . . . . . . . . . . . .
+2014-12-31 02:38:12.736 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.736 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.750 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x0c,0x30,0x31,0x2c,0x2d,0x36,0x34,0x2c,0x30,0x30,0x2c,0x30,0x31,0x03,. . . 0 1 , - 6 4 , 0 0 , 0 1 .
+NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . . . . . . . . . . . . . .
+2014-12-31 02:38:12.751 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.751 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.752 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,01, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x30,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 0 . . . . . . . . . . .
+2014-12-31 02:38:12.754 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.754 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.755 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x03,0x2c,0x30,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , 0 0 . . . . . . . . . .
+2014-12-31 02:38:12.756 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.756 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.756 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , . . . . . . . . . . . .
+2014-12-31 02:38:12.778 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.778 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.780 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x14,0x30,0x30,0x2c,0x63,0x38,0x3a,0x62,0x33,0x3a,0x37,0x33,0x3a,0x30,. . . 0 0 , c 8 : b 3 : 7 3 : 0
+0x36,0x3a,0x31,0x61,0x3a,0x36,0x66,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,6 : 1 a : 6 f . . . . . . . . .
+2014-12-31 02:38:12.780 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.780 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.781 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x2c,0x45,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , E . . . . . . . . . . .
+2014-12-31 02:38:12.782 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.782 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.783 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x39,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 9 . . . . . . . . . . . .
+2014-12-31 02:38:12.783 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.783 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.784 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2d,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . - . . . . . . . . . . . .
+2014-12-31 02:38:12.785 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.785 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.786 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x67,0x75,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . g u . . . . . . . . . . .
+2014-12-31 02:38:12.787 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.787 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.787 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-gu, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x65,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . e . . . . . . . . . . . .
+2014-12-31 02:38:12.788 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.788 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.788 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-gue, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x73,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . s . . . . . . . . . . . .
+2014-12-31 02:38:12.789 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.789 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.790 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-gues, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x74,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . t . . . . . . . . . . . .
+2014-12-31 02:38:12.790 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.790 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.791 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x0d,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . . . . . . . . . . . . . .
+2014-12-31 02:38:12.791 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.791 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.792 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x0a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . . . . . . . . . . . . . .
+2014-12-31 02:38:12.793 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.793 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.794 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 . . . . . . . . . . . .
+2014-12-31 02:38:12.794 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.794 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.795 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+0, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x33,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 3 . . . . . . . . . . . .
+2014-12-31 02:38:12.795 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.795 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.796 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , . . . . . . . . . . . .
+2014-12-31 02:38:12.796 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.797 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.797 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 . . . . . . . . . . . .
+2014-12-31 02:38:12.798 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.798 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.799 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,0, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x31,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 1 , . . . . . . . . . . .
+2014-12-31 02:38:12.799 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.800 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,, Executing = 1
+2014-12-31 02:38:12.799 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2d,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . - . . . . . . . . . . . .
+2014-12-31 02:38:12.801 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.801 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.802 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x38,0x35,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 8 5 . . . . . . . . . . .
+2014-12-31 02:38:12.803 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.803 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.803 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , . . . . . . . . . . . .
+2014-12-31 02:38:12.826 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.826 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.826 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x14,0x30,0x34,0x2c,0x31,0x31,0x30,0x34,0x2c,0x31,0x63,0x2c,0x34,0x30,. . . 0 4 , 1 1 0 4 , 1 c , 4 0
+0x2c,0x34,0x34,0x3a,0x33,0x32,0x3a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,, 4 4 : 3 2 : . . . . . . . . .
+2014-12-31 02:38:12.827 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.828 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.828 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x63,0x38,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . c 8 . . . . . . . . . . .
+2014-12-31 02:38:12.829 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.829 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.830 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x3a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . : . . . . . . . . . . . .
+2014-12-31 02:38:12.830 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.830 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.831 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x64,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . d . . . . . . . . . . . .
+2014-12-31 02:38:12.831 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.831 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.832 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 . . . . . . . . . . . .
+2014-12-31 02:38:12.833 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.833 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.834 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x3a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . : . . . . . . . . . . . .
+2014-12-31 02:38:12.834 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.834 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.835 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x61,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . a . . . . . . . . . . . .
+2014-12-31 02:38:12.835 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.835 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.836 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x38,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 8 . . . . . . . . . . . .
+2014-12-31 02:38:12.836 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.836 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.837 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x3a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . : . . . . . . . . . . . .
+2014-12-31 02:38:12.837 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.837 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x37,2014-12-31 02:38:12.838 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:, Executing = 1
+0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 7 . . . . . . . . . . . .
+2014-12-31 02:38:12.838 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.838 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.839 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:7, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 . . . . . . . . . . . .
+2014-12-31 02:38:12.861 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.861 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.862 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x14,0x2c,0x48,0x4f,0x4d,0x45,0x2d,0x41,0x38,0x37,0x30,0x0d,0x0a,0x30,. . . , H O M E - A 8 7 0 . . 0
+0x34,0x2c,0x30,0x31,0x2c,0x2d,0x38,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,4 , 0 1 , - 8 . . . . . . . . .
+2014-12-31 02:38:12.863 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.863 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.864 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-8, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x37,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 7 . . . . . . . . . . . .
+2014-12-31 02:38:12.864 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.864 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.865 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x2c,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , 0 . . . . . . . . . . .
+2014-12-31 02:38:12.866 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.866 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.866 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,0, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x34,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 4 . . . . . . . . . . . .
+2014-12-31 02:38:12.867 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.867 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.868 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , . . . . . . . . . . . .
+2014-12-31 02:38:12.868 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.868 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.868 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x33,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 3 . . . . . . . . . . . .
+2014-12-31 02:38:12.869 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.869 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.870 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,3, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x31,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 1 . . . . . . . . . . . .
+2014-12-31 02:38:12.870 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.870 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 . . . . . . . . . . . .
+2014-12-31 02:38:12.872 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,31, Executing = 1
+2014-12-31 02:38:12.872 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.872 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.872 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,310, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x34,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 4 . . . . . . . . . . . .
+2014-12-31 02:38:12.873 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.873 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.873 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,3104, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x2c,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , . . . . . . . . . . . .
+2014-12-31 02:38:12.874 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.874 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.875 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,3104,, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x32,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 2 . . . . . . . . . . . .
+2014-12-31 02:38:12.876 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.876 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.876 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,3104,2, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x38,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 8 . . . . . . . . . . . .
+2014-12-31 02:38:12.877 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+2014-12-31 02:38:12.877 MedFolio Pillbox Setup[33013:303] read message switch 1
+
+Waiting to complete read2014-12-31 02:38:12.878 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,3104,28, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x2c,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . , 0 . . . . . . . . . . .
+2014-12-31 02:38:12.878 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.878 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.879 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,3104,28,0, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x30,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . 0 . . . . . . . . . . . .
+2014-12-31 02:38:12.905 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.906 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,3104,28,00, Executing = 1
+2014-12-31 02:38:12.905 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x18,0x2c,0x34,0x36,0x3a,0x33,0x32,0x3a,0x63,0x38,0x3a,0x64,0x30,0x3a,. . . , 4 6 : 3 2 : c 8 : d 0 :
+0x61,0x38,0x3a,0x37,0x31,0x2c,0x0d,0x0a,0x45,0x4e,0x44,0x03,NONE,NONE,NONE,NONE,a 8 : 7 1 , . . E N D . . . . .
+2014-12-31 02:38:12.908 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.908 MedFolio Pillbox Setup[33013:303] read message switch 1
+2014-12-31 02:38:12.909 MedFolio Pillbox Setup[33013:303] incomplete output = scan
+<4.00>
+SCAN:Found 4
+01,01,-64,04,1100,1c,c0,c8:b3:73:06:1a:6d,E9
+02,01,-64,00,0100,00,00,c8:b3:73:06:1a:6f,E9-guest
+03,01,-85,04,1104,1c,40,44:32:c8:d0:a8:70,HOME-A870
+04,01,-87,04,3104,28,00,46:32:c8:d0:a8:71,
+END, Executing = 1
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x02,0x3a,0x0d,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . : . . . . . . . . . . . .
+2014-12-31 02:38:12.925 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.925 MedFolio Pillbox Setup[33013:303] -[MPScanSSIDController controllerReceivedScanMessage]: unrecognized selector sent to instance 0x6000000e3480
+
+--Reading--[Wed Dec 31 02:38:12 2014
+]0x02,0xab,0x01,0x0a,0x03,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,NONE,. . . . . . . . . . . . . . . .
+2014-12-31 02:38:12.927 MedFolio Pillbox Setup[33013:3217] isDeviceConnected = 1
+
+Waiting to complete read2014-12-31 02:38:12.928 MedFolio Pillbox Setup[33013:303] An uncaught exception was raised
+2014-12-31 02:38:12.928 MedFolio Pillbox Setup[33013:303] -[MPScanSSIDController controllerReceivedScanMessage]: unrecognized selector sent to instance 0x6000000e3480
+2014-12-31 02:38:12.928 MedFolio Pillbox Setup[33013:303] (
+0   CoreFoundation                      0x00007fff90c4f25c __exceptionPreprocess + 172
+1   libobjc.A.dylib                     0x00007fff8aef5e75 objc_exception_throw + 43
+2   CoreFoundation                      0x00007fff90c5212d -[NSObject(NSObject) doesNotRecognizeSelector:] + 205
+3   CoreFoundation                      0x00007fff90bad272 ___forwarding___ + 1010
+4   CoreFoundation                      0x00007fff90bacdf8 _CF_forwarding_prep_0 + 120
+5   Foundation                          0x00007fff8b313988 -[NSObject(NSThreadPerformAdditions) performSelector:onThread:withObject:waitUntilDone:modes:] + 871
+6   Foundation                          0x00007fff8b31355f -[NSObject(NSThreadPerformAdditions) performSelectorOnMainThread:withObject:waitUntilDone:] + 134
+7   MedFolio Pillbox Setup              0x0000000100002fdc -[MPDeviceConfigurationViewController deviceCommunicationdidReadMessage:] + 1292
+8   MedFolio Pillbox Setup              0x000000010000ab12 -[MPDeviceCommunication deviceCommunicationdidReadMessage:] + 162
+9   MedFolio Pillbox Setup              0x000000010000a42b __53-[MPDeviceCommunication readMessageOnSecondaryThread]_block_invoke_3 + 91
+10  libdispatch.dylib                   0x000000010004b32d _dispatch_call_block_and_release + 12
+11  libdispatch.dylib                   0x0000000100047925 _dispatch_client_callout + 8
+12  libdispatch.dylib                   0x00000001000513cd _dispatch_main_queue_callback_4CF + 607
+13  CoreFoundation                      0x00007fff90bb64f9 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 9
+14  CoreFoundation                      0x00007fff90b71714 __CFRunLoopRun + 1636
+15  CoreFoundation                      0x00007fff90b70e75 CFRunLoopRunSpecific + 309
+16  HIToolbox                           0x00007fff95fcba0d RunCurrentEventLoopInMode + 226
+17  HIToolbox                           0x00007fff95fcb7b7 ReceiveNextEventCommon + 479
+18  HIToolbox                           0x00007fff95fcb5bc _BlockUntilNextEventMatchingListInModeWithFilter + 65
+19  AppKit                              0x00007fff9675624e _DPSNextEvent + 1434
+20  AppKit                              0x00007fff9675589b -[NSApplication nextEventMatchingMask:untilDate:inMode:dequeue:] + 122
+21  AppKit                              0x00007fff9674999c -[NSApplication run] + 553
+22  AppKit                              0x00007fff96734783 NSApplicationMain + 940
+23  MedFolio Pillbox Setup              0x000000010000ac52 main + 34
+24  MedFolio Pillbox Setup              0x0000000100001c34 start + 52
+)
+2014-12-31 02:38:12.929 MedFolio Pillbox Setup[33013:303] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '-[MPScanSSIDController controllerReceivedScanMessage]: unrecognized selector sent to instance 0x6000000e3480'
+*** First throw call stack:
+(
+0   CoreFoundation                      0x00007fff90c4f25c __exceptionPreprocess + 172
+1   libobjc.A.dylib                     0x00007fff8aef5e75 objc_exception_throw + 43
+2   CoreFoundation                      0x00007fff90c5212d -[NSObject(NSObject) doesNotRecognizeSelector:] + 205
+3   CoreFoundation                      0x00007fff90bad272 ___forwarding___ + 1010
+4   CoreFoundation                      0x00007fff90bacdf8 _CF_forwarding_prep_0 + 120
+5   Foundation                          0x00007fff8b313988 -[NSObject(NSThreadPerformAdditions) performSelector:onThread:withObject:waitUntilDone:modes:] + 871
+6   Foundation                          0x00007fff8b31355f -[NSObject(NSThreadPerformAdditions) performSelectorOnMainThread:withObject:waitUntilDone:] + 134
+7   MedFolio Pillbox Setup              0x0000000100002fdc -[MPDeviceConfigurationViewController deviceCommunicationdidReadMessage:] + 1292
+8   MedFolio Pillbox Setup              0x000000010000ab12 -[MPDeviceCommunication deviceCommunicationdidReadMessage:] + 162
+9   MedFolio Pillbox Setup              0x000000010000a42b __53-[MPDeviceCommunication readMessageOnSecondaryThread]_block_invoke_3 + 91
+10  libdispatch.dylib                   0x000000010004b32d _dispatch_call_block_and_release + 12
+11  libdispatch.dylib                   0x0000000100047925 _dispatch_client_callout + 8
+12  libdispatch.dylib                   0x00000001000513cd _dispatch_main_queue_callback_4CF + 607
+13  CoreFoundation                      0x00007fff90bb64f9 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__ + 9
+14  CoreFoundation                      0x00007fff90b71714 __CFRunLoopRun + 1636
+15  CoreFoundation                      0x00007fff90b70e75 CFRunLoopRunSpecific + 309
+16  HIToolbox                           0x00007fff95fcba0d RunCurrentEventLoopInMode + 226
+17  HIToolbox                           0x00007fff95fcb7b7 ReceiveNextEventCommon + 479
+18  HIToolbox                           0x00007fff95fcb5bc _BlockUntilNextEventMatchingListInModeWithFilter + 65
+19  AppKit                              0x00007fff9675624e _DPSNextEvent + 1434
+20  AppKit                              0x00007fff9675589b -[NSApplication nextEventMatchingMask:untilDate:inMode:dequeue:] + 122
+21  AppKit                              0x00007fff9674999c -[NSApplication run] + 553
+22  AppKit                              0x00007fff96734783 NSApplicationMain + 940
+23  MedFolio Pillbox Setup              0x000000010000ac52 main + 34
+24  MedFolio Pillbox Setup              0x0000000100001c34 start + 52
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
+(lldb)

@@ -14,6 +14,10 @@
 		DD9622891A2B448B009ABF32 /* MPDeviceConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9622881A2B448B009ABF32 /* MPDeviceConfigurationViewController.m */; };
 		DDB8D08D1A46920100AFB1F9 /* MPEnterWifiPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB8D08B1A46920100AFB1F9 /* MPEnterWifiPassword.m */; };
 		DDB8D08E1A46920100AFB1F9 /* MPEnterWifiPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB8D08C1A46920100AFB1F9 /* MPEnterWifiPassword.xib */; };
+		DDBB186D1A4E70EB00FBA7EB /* MPSaveDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB186B1A4E70EB00FBA7EB /* MPSaveDetailsController.m */; };
+		DDBB186E1A4E70EB00FBA7EB /* MPSaveDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBB186C1A4E70EB00FBA7EB /* MPSaveDetailsController.xib */; };
+		DDBB18721A4E710200FBA7EB /* MPRebootDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBB18701A4E710200FBA7EB /* MPRebootDeviceController.m */; };
+		DDBB18731A4E710200FBA7EB /* MPRebootDeviceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBB18711A4E710200FBA7EB /* MPRebootDeviceController.xib */; };
 		DDD1C0441A28CCCB00666524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1C0431A28CCCB00666524 /* AppDelegate.m */; };
 		DDD1C0461A28CCCB00666524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD1C0451A28CCCB00666524 /* main.m */; };
 		DDD1C0481A28CCCB00666524 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD1C0471A28CCCB00666524 /* Images.xcassets */; };
@@ -48,6 +52,13 @@
 		DDB8D08A1A46920100AFB1F9 /* MPEnterWifiPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEnterWifiPassword.h; sourceTree = "<group>"; };
 		DDB8D08B1A46920100AFB1F9 /* MPEnterWifiPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPEnterWifiPassword.m; sourceTree = "<group>"; };
 		DDB8D08C1A46920100AFB1F9 /* MPEnterWifiPassword.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPEnterWifiPassword.xib; sourceTree = "<group>"; };
+		DDB90C881A531EB700686A59 /* LogReceived.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LogReceived.txt; path = "MedFolio Pillbox Setup/LogReceived.txt"; sourceTree = SOURCE_ROOT; };
+		DDBB186A1A4E70EB00FBA7EB /* MPSaveDetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPSaveDetailsController.h; sourceTree = "<group>"; };
+		DDBB186B1A4E70EB00FBA7EB /* MPSaveDetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSaveDetailsController.m; sourceTree = "<group>"; };
+		DDBB186C1A4E70EB00FBA7EB /* MPSaveDetailsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPSaveDetailsController.xib; sourceTree = "<group>"; };
+		DDBB186F1A4E710200FBA7EB /* MPRebootDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPRebootDeviceController.h; sourceTree = "<group>"; };
+		DDBB18701A4E710200FBA7EB /* MPRebootDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPRebootDeviceController.m; sourceTree = "<group>"; };
+		DDBB18711A4E710200FBA7EB /* MPRebootDeviceController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPRebootDeviceController.xib; sourceTree = "<group>"; };
 		DDD1C03D1A28CCCB00666524 /* MedFolio Pillbox Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MedFolio Pillbox Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD1C0411A28CCCB00666524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDD1C0421A28CCCB00666524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +128,26 @@
 			path = EnterWirelessPassword;
 			sourceTree = "<group>";
 		};
+		DDBB18681A4E706000FBA7EB /* Reboot Device Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB186F1A4E710200FBA7EB /* MPRebootDeviceController.h */,
+				DDBB18701A4E710200FBA7EB /* MPRebootDeviceController.m */,
+				DDBB18711A4E710200FBA7EB /* MPRebootDeviceController.xib */,
+			);
+			path = "Reboot Device Controller";
+			sourceTree = "<group>";
+		};
+		DDBB18691A4E706000FBA7EB /* Save Details Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDBB186A1A4E70EB00FBA7EB /* MPSaveDetailsController.h */,
+				DDBB186B1A4E70EB00FBA7EB /* MPSaveDetailsController.m */,
+				DDBB186C1A4E70EB00FBA7EB /* MPSaveDetailsController.xib */,
+			);
+			path = "Save Details Controller";
+			sourceTree = "<group>";
+		};
 		DDD1C0341A28CCCB00666524 = {
 			isa = PBXGroup;
 			children = (
@@ -149,9 +180,11 @@
 				DD9622881A2B448B009ABF32 /* MPDeviceConfigurationViewController.m */,
 				DDE16B011A496F0F00DE297A /* Parsers */,
 				DDE16AFA1A496CB400DE297A /* ModelObjects */,
-				DDB8D0891A468ECC00AFB1F9 /* EnterWirelessPassword */,
 				DD51E0041A459EAD001C76D7 /* MFDeviceConnectivityController */,
 				DD51DFFE1A459804001C76D7 /* ScanDeviceSSID Controller */,
+				DDB8D0891A468ECC00AFB1F9 /* EnterWirelessPassword */,
+				DDBB18691A4E706000FBA7EB /* Save Details Controller */,
+				DDBB18681A4E706000FBA7EB /* Reboot Device Controller */,
 			);
 			path = "MedFolio Pillbox Setup";
 			sourceTree = "<group>";
@@ -169,8 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				DDD1C0561A28CCCB00666524 /* MedFolio_Pillbox_SetupTests.m */,
-				DDD1C0541A28CCCB00666524 /* Supporting Files */,
 				DDE16B051A49794200DE297A /* MPScanResultParserTests.m */,
+				DDD1C0541A28CCCB00666524 /* Supporting Files */,
 			);
 			path = "MedFolio Pillbox SetupTests";
 			sourceTree = "<group>";
@@ -179,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				DDD1C0551A28CCCB00666524 /* Info.plist */,
+				DDB90C881A531EB700686A59 /* LogReceived.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -286,6 +320,8 @@
 			files = (
 				DD51E0031A459823001C76D7 /* MPScanSSIDController.xib in Resources */,
 				DD51E0091A459ECF001C76D7 /* MPConnectivityController.xib in Resources */,
+				DDBB186E1A4E70EB00FBA7EB /* MPSaveDetailsController.xib in Resources */,
+				DDBB18731A4E710200FBA7EB /* MPRebootDeviceController.xib in Resources */,
 				DDD1C0481A28CCCB00666524 /* Images.xcassets in Resources */,
 				DDB8D08E1A46920100AFB1F9 /* MPEnterWifiPassword.xib in Resources */,
 				DDD1C04B1A28CCCB00666524 /* MainMenu.xib in Resources */,
@@ -306,6 +342,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDBB186D1A4E70EB00FBA7EB /* MPSaveDetailsController.m in Sources */,
+				DDBB18721A4E710200FBA7EB /* MPRebootDeviceController.m in Sources */,
 				DDE16AFD1A496CD300DE297A /* MPDeviceCommand.m in Sources */,
 				DD9622891A2B448B009ABF32 /* MPDeviceConfigurationViewController.m in Sources */,
 				DDD1C0621A28CF9A00666524 /* MPDeviceCommunication.m in Sources */,

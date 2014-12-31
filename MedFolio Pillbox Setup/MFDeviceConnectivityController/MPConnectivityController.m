@@ -20,4 +20,8 @@
     // Do view setup here.
 }
 
+- (IBAction)didClickedNext:(id)sender{
+    
+}
+
 @end

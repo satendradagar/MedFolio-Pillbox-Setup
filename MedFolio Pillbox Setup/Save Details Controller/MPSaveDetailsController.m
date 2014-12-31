@@ -1,18 +1,18 @@
 //
-//  MPEnterWifiPassword.m
+//  MPSaveDetailsController.m
 //  MedFolio Pillbox Setup
 //
-//  Created by Satendra Personal on 21/12/14.
+//  Created by Satendra Personal on 27/12/14.
 //  Copyright (c) 2014 CoreBits Software Solutions Pvt. Ltd(corebitss.com). All rights reserved.
 //
 
-#import "MPEnterWifiPassword.h"
+#import "MPSaveDetailsController.h"
 
-@interface MPEnterWifiPassword ()
+@interface MPSaveDetailsController ()
 
 @end
 
-@implementation MPEnterWifiPassword
+@implementation MPSaveDetailsController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

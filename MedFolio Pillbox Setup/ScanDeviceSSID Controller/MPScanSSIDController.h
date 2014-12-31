@@ -7,8 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MPDeviceConfigurationViewController.h"
+#import "MPNetwork.h"
 
 @interface MPScanSSIDController : NSViewController
 - (void)controllerReceivedScanMessage:(NSString *)scannerDetails;
+@property (nonatomic)  MPDeviceConfigurationViewController *configurationViewController;
+- (IBAction)didClickedNext:(id)sender;
+- (MPNetwork *)selectedNetwork;
 
 @end

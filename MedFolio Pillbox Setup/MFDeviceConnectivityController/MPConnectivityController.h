@@ -9,5 +9,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface MPConnectivityController : NSViewController
+- (IBAction)didClickedNext:(id)sender;
 
 @end

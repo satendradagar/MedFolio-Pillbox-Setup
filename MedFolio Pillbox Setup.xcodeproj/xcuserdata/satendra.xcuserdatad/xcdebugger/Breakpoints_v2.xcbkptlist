@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "734"
             endingLineNumber = "734"
-            landmarkName = "-writeMessage:"
+            landmarkName = "-setupDevice"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "899"
             endingLineNumber = "899"
-            landmarkName = "-readMessage"
+            landmarkName = "-writeCommandMessage:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -47,7 +47,39 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "887"
             endingLineNumber = "887"
-            landmarkName = "-readMessage"
+            landmarkName = "-writeCommandMessage:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedFolio Pillbox Setup/MPDeviceConfigurationViewController.m"
+            timestampString = "441703288.67089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "-deviceCommunicationdidReadMessage:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedFolio Pillbox Setup/MPDeviceConfigurationViewController.m"
+            timestampString = "441703288.67089"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "-deviceCommunicationdidReadMessage:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +89,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MedFolio Pillbox Setup/MPDeviceCommunication.m"
-            timestampString = "440588394.211861"
+            filePath = "MedFolio Pillbox Setup/MPDeviceConfigurationViewController.m"
+            timestampString = "441703288.67089"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "912"
-            endingLineNumber = "912"
-            landmarkName = "-readMessage"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
+            landmarkName = "-showConnectivityView"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedFolio Pillbox Setup/MPDeviceConfigurationViewController.m"
+            timestampString = "441712927.599189"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "-deviceCommunicationdidReadMessage:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,29 +121,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MedFolio Pillbox Setup/MPDeviceCommunication.m"
-            timestampString = "440612321.524931"
+            filePath = "MedFolio Pillbox Setup/MPDeviceConfigurationViewController.m"
+            timestampString = "441712955.712767"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "922"
-            endingLineNumber = "922"
-            landmarkName = "-readMessage"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedFolio Pillbox Setup/MPDeviceCommunication.m"
-            timestampString = "440620571.104975"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "871"
-            endingLineNumber = "871"
-            landmarkName = "-sendReadCommand"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "-deviceCommunicationdidReadMessage:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

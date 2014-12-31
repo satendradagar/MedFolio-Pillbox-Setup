@@ -7,7 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MPNetwork.h"
+#import "MPDeviceConfigurationViewController.h"
 
 @interface MPEnterWifiPassword : NSViewController
+
+@property (nonatomic, retain) MPNetwork *selectedNetwork;
+@property (nonatomic)  MPDeviceConfigurationViewController *configurationViewController;
+@property (weak) IBOutlet NSSecureTextField *passwordField;
+
+- (IBAction)didClickedNext:(id)sender;
 
 @end
