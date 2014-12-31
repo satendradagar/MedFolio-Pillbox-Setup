@@ -10,8 +10,11 @@
 #import "MPDeviceCommunication.h"
 
 @interface MPDeviceConfigurationViewController : NSViewController<MPDeviceCommunicationDelegate>
+@property (weak) IBOutlet NSButton *nextButton;
+
 - (IBAction)didTappedConnect:(id)sender;
 - (IBAction)didTappedSendMsg:(id)sender;
 - (IBAction)didTappedReadMessage:(id)sender;
+- (IBAction)didTappedSendScanCommand:(id)sender;
 
 @end
