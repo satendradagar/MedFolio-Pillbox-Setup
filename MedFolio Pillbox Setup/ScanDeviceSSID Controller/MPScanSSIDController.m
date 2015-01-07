@@ -100,6 +100,10 @@
         NSLog(@"added Menu: %@",scannedNetwork.ssid);
         [_ssidPopupMenu addItemWithTitle:scannedNetwork.ssid];
     }
+    if (scannedNetworks.count) {
+        self.configurationViewController.nextButton.enabled = YES;
+
+    }
     //update popupbutton items
 }
 
