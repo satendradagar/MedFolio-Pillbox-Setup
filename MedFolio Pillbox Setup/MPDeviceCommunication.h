@@ -49,4 +49,6 @@
 - (void)readMessageOnSecondaryThread;
 - (void)readMessageAsync;
 
+- (BOOL)isDeviceConnected;
+
 @end
