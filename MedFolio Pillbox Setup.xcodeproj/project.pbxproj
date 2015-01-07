@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD09585A1A5C00D600E2FEB2 /* MedFolioLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0958571A5C00D600E2FEB2 /* MedFolioLogo.png */; };
+		DD09585B1A5C00D600E2FEB2 /* ShowMacUsbPort.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0958581A5C00D600E2FEB2 /* ShowMacUsbPort.png */; };
+		DD09585C1A5C00D600E2FEB2 /* ShowMedFolioUsbPort.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0958591A5C00D600E2FEB2 /* ShowMedFolioUsbPort.png */; };
+		DD0958611A5C088700E2FEB2 /* MPDeviceDisconnectivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD09585F1A5C088600E2FEB2 /* MPDeviceDisconnectivityController.m */; };
+		DD0958621A5C088700E2FEB2 /* MPDeviceDisconnectivityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD0958601A5C088600E2FEB2 /* MPDeviceDisconnectivityController.xib */; };
 		DD51E0021A459823001C76D7 /* MPScanSSIDController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51E0001A459823001C76D7 /* MPScanSSIDController.m */; };
 		DD51E0031A459823001C76D7 /* MPScanSSIDController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51E0011A459823001C76D7 /* MPScanSSIDController.xib */; };
 		DD51E0081A459ECF001C76D7 /* MPConnectivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD51E0061A459ECF001C76D7 /* MPConnectivityController.m */; };
 		DD51E0091A459ECF001C76D7 /* MPConnectivityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD51E0071A459ECF001C76D7 /* MPConnectivityController.xib */; };
+		DD62B1F71A5D3DD4002568D7 /* ConnectPowerAdaptor.png in Resources */ = {isa = PBXBuildFile; fileRef = DD62B1F61A5D3DD4002568D7 /* ConnectPowerAdaptor.png */; };
 		DD9622891A2B448B009ABF32 /* MPDeviceConfigurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9622881A2B448B009ABF32 /* MPDeviceConfigurationViewController.m */; };
 		DDB8D08D1A46920100AFB1F9 /* MPEnterWifiPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB8D08B1A46920100AFB1F9 /* MPEnterWifiPassword.m */; };
 		DDB8D08E1A46920100AFB1F9 /* MPEnterWifiPassword.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB8D08C1A46920100AFB1F9 /* MPEnterWifiPassword.xib */; };
@@ -41,12 +47,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD0958571A5C00D600E2FEB2 /* MedFolioLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MedFolioLogo.png; sourceTree = "<group>"; };
+		DD0958581A5C00D600E2FEB2 /* ShowMacUsbPort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShowMacUsbPort.png; sourceTree = "<group>"; };
+		DD0958591A5C00D600E2FEB2 /* ShowMedFolioUsbPort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShowMedFolioUsbPort.png; sourceTree = "<group>"; };
+		DD09585E1A5C088600E2FEB2 /* MPDeviceDisconnectivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDeviceDisconnectivityController.h; sourceTree = "<group>"; };
+		DD09585F1A5C088600E2FEB2 /* MPDeviceDisconnectivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDeviceDisconnectivityController.m; sourceTree = "<group>"; };
+		DD0958601A5C088600E2FEB2 /* MPDeviceDisconnectivityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPDeviceDisconnectivityController.xib; sourceTree = "<group>"; };
 		DD51DFFF1A459823001C76D7 /* MPScanSSIDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPScanSSIDController.h; sourceTree = "<group>"; };
 		DD51E0001A459823001C76D7 /* MPScanSSIDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPScanSSIDController.m; sourceTree = "<group>"; };
 		DD51E0011A459823001C76D7 /* MPScanSSIDController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPScanSSIDController.xib; sourceTree = "<group>"; };
 		DD51E0051A459ECF001C76D7 /* MPConnectivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPConnectivityController.h; sourceTree = "<group>"; };
 		DD51E0061A459ECF001C76D7 /* MPConnectivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPConnectivityController.m; sourceTree = "<group>"; };
 		DD51E0071A459ECF001C76D7 /* MPConnectivityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MPConnectivityController.xib; sourceTree = "<group>"; };
+		DD62B1F61A5D3DD4002568D7 /* ConnectPowerAdaptor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ConnectPowerAdaptor.png; sourceTree = "<group>"; };
 		DD9622871A2B448B009ABF32 /* MPDeviceConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPDeviceConfigurationViewController.h; sourceTree = "<group>"; };
 		DD9622881A2B448B009ABF32 /* MPDeviceConfigurationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPDeviceConfigurationViewController.m; sourceTree = "<group>"; };
 		DDB8D08A1A46920100AFB1F9 /* MPEnterWifiPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPEnterWifiPassword.h; sourceTree = "<group>"; };
@@ -98,6 +111,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0958561A5C00D600E2FEB2 /* Graphics And Icons */ = {
+			isa = PBXGroup;
+			children = (
+				DD0958571A5C00D600E2FEB2 /* MedFolioLogo.png */,
+				DD0958581A5C00D600E2FEB2 /* ShowMacUsbPort.png */,
+				DD0958591A5C00D600E2FEB2 /* ShowMedFolioUsbPort.png */,
+				DD62B1F61A5D3DD4002568D7 /* ConnectPowerAdaptor.png */,
+			);
+			path = "Graphics And Icons";
+			sourceTree = "<group>";
+		};
+		DD09585D1A5C085800E2FEB2 /* DeviceDisconnictivityController */ = {
+			isa = PBXGroup;
+			children = (
+				DD09585E1A5C088600E2FEB2 /* MPDeviceDisconnectivityController.h */,
+				DD09585F1A5C088600E2FEB2 /* MPDeviceDisconnectivityController.m */,
+				DD0958601A5C088600E2FEB2 /* MPDeviceDisconnectivityController.xib */,
+			);
+			path = DeviceDisconnictivityController;
+			sourceTree = "<group>";
+		};
 		DD51DFFE1A459804001C76D7 /* ScanDeviceSSID Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +219,8 @@
 				DDB8D0891A468ECC00AFB1F9 /* EnterWirelessPassword */,
 				DDBB18691A4E706000FBA7EB /* Save Details Controller */,
 				DDBB18681A4E706000FBA7EB /* Reboot Device Controller */,
+				DD09585D1A5C085800E2FEB2 /* DeviceDisconnictivityController */,
+				DD0958561A5C00D600E2FEB2 /* Graphics And Icons */,
 			);
 			path = "MedFolio Pillbox Setup";
 			sourceTree = "<group>";
@@ -318,10 +354,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD62B1F71A5D3DD4002568D7 /* ConnectPowerAdaptor.png in Resources */,
 				DD51E0031A459823001C76D7 /* MPScanSSIDController.xib in Resources */,
+				DD09585C1A5C00D600E2FEB2 /* ShowMedFolioUsbPort.png in Resources */,
 				DD51E0091A459ECF001C76D7 /* MPConnectivityController.xib in Resources */,
 				DDBB186E1A4E70EB00FBA7EB /* MPSaveDetailsController.xib in Resources */,
+				DD09585B1A5C00D600E2FEB2 /* ShowMacUsbPort.png in Resources */,
+				DD09585A1A5C00D600E2FEB2 /* MedFolioLogo.png in Resources */,
 				DDBB18731A4E710200FBA7EB /* MPRebootDeviceController.xib in Resources */,
+				DD0958621A5C088700E2FEB2 /* MPDeviceDisconnectivityController.xib in Resources */,
 				DDD1C0481A28CCCB00666524 /* Images.xcassets in Resources */,
 				DDB8D08E1A46920100AFB1F9 /* MPEnterWifiPassword.xib in Resources */,
 				DDD1C04B1A28CCCB00666524 /* MainMenu.xib in Resources */,
@@ -346,6 +387,7 @@
 				DDBB18721A4E710200FBA7EB /* MPRebootDeviceController.m in Sources */,
 				DDE16AFD1A496CD300DE297A /* MPDeviceCommand.m in Sources */,
 				DD9622891A2B448B009ABF32 /* MPDeviceConfigurationViewController.m in Sources */,
+				DD0958611A5C088700E2FEB2 /* MPDeviceDisconnectivityController.m in Sources */,
 				DDD1C0621A28CF9A00666524 /* MPDeviceCommunication.m in Sources */,
 				DDD1C0461A28CCCB00666524 /* main.m in Sources */,
 				DDE16B001A496D2000DE297A /* MPNetwork.m in Sources */,
