@@ -10,8 +10,9 @@
 
 #import "MPEnterWifiPassword.h"
 
-@interface MPEnterWifiPassword ()
+@interface MPEnterWifiPassword ()<NSTextFieldDelegate>
 @property (weak) IBOutlet NSTextField *securityMode;
+- (IBAction)userDidClickedOnPassword:(NSSecureTextField *)sender;
 
 @end
 
@@ -19,9 +20,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     // Do view setup here.
 }
 
+-(void)awakeFromNib
+{
+    [super awakeFromNib];
+    self.passwordField.delegate = self;
+    [self.passwordField performSelector:@selector(becomeFirstResponder) withObject:nil afterDelay:0.5];
+    self.passwordField.nextResponder = self.configurationViewController.nextButton;
+//    [[NSApp mainWindow] performSelector:@selector(makeFirstResponder:) withObject:self.passwordField afterDelay:0.5];
+
+}
 - (void)setSelectedNetwork:(MPNetwork *)selectedNetwork
 {
     _selectedNetwork = selectedNetwork;
@@ -50,4 +61,14 @@
     return KSecurityModes[code];
 }
 
+- (void)controlTextDidChange:(NSNotification *)notification {
+    self.passwordString = [notification.object stringValue];
+    // there was a text change in some control
+}
+
+- (IBAction)userDidClickedOnPassword:(NSSecureTextField *)sender {
+//    if (sender.stringValue.length) {
+//        [self.configurationViewController.nextButton becomeFirstResponder];
+//    }
+}
 @end

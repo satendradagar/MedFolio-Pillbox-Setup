@@ -14,8 +14,8 @@
 
 @property (nonatomic, retain) MPNetwork *selectedNetwork;
 @property (nonatomic)  MPDeviceConfigurationViewController *configurationViewController;
-@property (weak) IBOutlet NSSecureTextField *passwordField;
-
+@property (weak) IBOutlet NSTextField *passwordField;
+@property (nonatomic, retain) NSString *passwordString;
 - (IBAction)didClickedNext:(id)sender;
 
 @end
